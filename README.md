@@ -14,6 +14,7 @@ Sample of GA Framework
 <summary>Details</summary>
 
 - [Demo](#demo)
+- [Framework](#framework)
 - [Author](#author)
 
 </details>
