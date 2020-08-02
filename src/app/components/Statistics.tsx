@@ -1,9 +1,9 @@
-import React, {useMemo} from 'react';
-import {makeStyles} from '@material-ui/core/styles';
+import React, {useMemo, FC} from 'react';
+import {makeStyles, createStyles} from '@material-ui/core/styles';
 import {useStoreContext} from '@technote-space/ga-framework';
 import {sprintf} from 'sprintf-js';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles(() => createStyles({
   wrap: {
     background: '#555',
     marginTop: 10,
@@ -14,9 +14,9 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export default function Statistics() {
+const Statistics: FC = () => {
   const {store: {logic: {fitness, progress}}} = useStoreContext();
-  const classes = useStyles();
+  const classes                               = useStyles();
 
   return useMemo(() => <div className={classes.wrap}>
     <div>
@@ -28,4 +28,6 @@ export default function Statistics() {
       </div>
     </div>
   </div>, [progress, classes]);
-}
+};
+
+export default Statistics;

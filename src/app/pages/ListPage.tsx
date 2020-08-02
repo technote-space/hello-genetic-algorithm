@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {FC} from 'react';
 import {List, useStoreContext} from '@technote-space/ga-framework';
 import {TableCell} from '@material-ui/core';
 import {sprintf} from 'sprintf-js';
 
-export default function ListPage() {
+const ListPage: FC = () => {
   const {store: {logic: {population}}} = useStoreContext();
 
   return <List
@@ -17,4 +17,6 @@ export default function ListPage() {
       </TableCell></>}
     defaultPerPage={30}
   />;
-}
+};
+
+export default ListPage;

@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {FC} from 'react';
 import {Timeline, useStoreContext} from '@technote-space/ga-framework';
 
-export default function TimelinePage() {
+const TimelinePage: FC = () => {
   const {store: {histories}} = useStoreContext();
 
   return <Timeline data={histories}/>;
-}
+};
+
+export default TimelinePage;
