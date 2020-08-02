@@ -21,14 +21,12 @@
   "main": "build/index.js",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
-    "@technote-space/ga-framework": "^0.14.0",
+    "@technote-space/ga-framework": "^0.14.2",
     "@technote-space/genetic-algorithms-js": "^0.8.2",
     "axios": "^0.19.2",
     "encoding-japanese": "^1.0.30",
     "fast-levenshtein": "^3.0.0",
     "file-saver": "^2.0.2",
-    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "sprintf-js": "^1.1.2"
@@ -50,7 +48,6 @@
     "@typescript-eslint/eslint-plugin": "^3.7.1",
     "@typescript-eslint/parser": "^3.7.1",
     "babel-loader": "^8.1.0",
-    "babel-plugin-i18next-extract": "^0.7.2",
     "babel-plugin-react-html-attrs": "^3.0.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "copy-webpack-plugin": "^6.0.3",
