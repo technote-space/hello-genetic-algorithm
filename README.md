@@ -22,6 +22,9 @@ Sample of GA Framework
 ## Demo
 [demo](https://technote-space.github.io/ga-framework/samples/hello-genetic-algorithm)
 
+## Framework
+[GA Framework](https://github.com/technote-space/ga-framework)
+
 ## Author
 [GitHub (Technote)](https://github.com/technote-space)  
 [Blog](https://technote.space)
