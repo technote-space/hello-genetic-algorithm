@@ -14,11 +14,7 @@ Sample of GA Framework
 <details>
 <summary>Details</summary>
 
-- [Install](#install)
-- [Samples](#samples)
-  - [Automatic programming](#automatic-programming)
-  - [Game Learning System](#game-learning-system)
-  - [Figure ground](#figure-ground)
+- [Demo](#demo)
 - [Author](#author)
 
 </details>
