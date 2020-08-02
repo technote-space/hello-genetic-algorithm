@@ -312,7 +312,7 @@ SOFTWARE.
 
 
 --------------------------------------------------------------------------------
-@technote-space/ga-framework v0.13.5 - Technote
+@technote-space/ga-framework v0.14.0 - Technote
 https://github.com/technote-space/ga-framework.git
 --------------------------------------------------------------------------------
 
