@@ -1,6 +1,6 @@
 {
   "name": "@technote-space/hello-genetic-algorithm",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Hello Genetic Algorithm",
   "author": {
     "name": "Technote",
@@ -21,7 +21,7 @@
   "main": "build/index.js",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
-    "@technote-space/ga-framework": "^0.14.2",
+    "@technote-space/ga-framework": "^0.14.3",
     "@technote-space/genetic-algorithms-js": "^0.8.2",
     "axios": "^0.19.2",
     "encoding-japanese": "^1.0.30",
