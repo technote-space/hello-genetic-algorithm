@@ -1,6 +1,7 @@
-import {GeneticAlgorithmBase} from '@technote-space/ga-framework';
+import {GeneticAlgorithmBase} from '@technote-space/ga-framework/dist/app/logic/Algorithm';
 import {ITermination, IMigration} from '@technote-space/genetic-algorithms-js';
 import {Genotype} from '../Genotype';
+import {Phenotype} from '../Phenotype';
 import {Termination} from '../Termination';
 import {Migration} from '../Migration';
 import {UpdateResult, Context} from '../../types';
@@ -53,7 +54,7 @@ export abstract class Ga extends GeneticAlgorithmBase<UpdateResult> {
       population: this.chromosomes.map(chromosome => {
         const genotype = chromosome as Genotype;
         return {
-          value: genotype.phenotype.value,
+          value: Phenotype.getValue(genotype),
           fitness: genotype.fitness ?? 0,
         };
       }),
