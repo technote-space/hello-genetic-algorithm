@@ -1,6 +1,7 @@
 import {FitnessBase, IChromosome} from '@technote-space/genetic-algorithms-js';
 import levenshtein from 'fast-levenshtein';
 import {Genotype} from './Genotype';
+import {Phenotype} from './Phenotype';
 import {TestData} from './TestData/TestData';
 
 export class Fitness extends FitnessBase {
@@ -9,10 +10,9 @@ export class Fitness extends FitnessBase {
   }
 
   public evaluate(chromosome: IChromosome): void {
-    const genotype  = chromosome as Genotype;
-    const phenotype = genotype.phenotype;
+    const genotype = chromosome as Genotype;
 
-    const diff = levenshtein.get(this.testData.target, phenotype.value);
-    phenotype.setFitness(1.0 / (diff + 1));
+    const diff       = levenshtein.get(this.testData.target, Phenotype.getValue(genotype));
+    genotype.fitness = 1.0 / (diff + 1);
   }
 }
