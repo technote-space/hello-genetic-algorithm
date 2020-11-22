@@ -38,3 +38,4 @@ jobs:
           PR_BRANCH_NAME: 'chore-sync-workflows'
           PR_TITLE: 'chore: sync workflows'
           ONLY_DEFAULT_BRANCH: true
+          UTILS_OUTPUT_DEBUG: true
