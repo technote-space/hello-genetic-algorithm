@@ -44,9 +44,9 @@
     "sprintf-js": "^1.1.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.5",
+    "@babel/core": "^7.20.7",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
-    "@babel/plugin-proposal-object-rest-spread": "^7.20.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
     "@babel/plugin-transform-react-inline-elements": "^7.18.6",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-flow": "^7.18.6",
