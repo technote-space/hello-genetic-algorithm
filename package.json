@@ -29,7 +29,7 @@
     "lint": "eslint './src/**/*.{ts,js,jsx}' --cache",
     "lint:fix": "eslint './src/**/*.{ts,js,jsx}' --fix",
     "update": "npm_config_yes=true npx npm-check-updates -u --timeout 100000 && yarn install && yarn upgrade && yarn audit",
-    "watch": "yarn kill && NODE_ENV=none DEV_SERVER_PORT=$npm_package_port webpack serve"
+    "serve": "yarn kill && NODE_ENV=none DEV_SERVER_PORT=$npm_package_port webpack serve"
   },
   "dependencies": {
     "@mui/material": "^5.11.2",

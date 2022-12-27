@@ -1,4 +1,4 @@
-import {MigrationBase} from '@technote-space/genetic-algorithms-js';
+import { MigrationBase } from '@technote-space/genetic-algorithms-js';
 
 export class Migration extends MigrationBase {
   get rate(): number {
