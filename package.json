@@ -1,6 +1,6 @@
 {
   "name": "@technote-space/hello-genetic-algorithm",
-  "version": "0.1.15",
+  "version": "0.2.0",
   "description": "Hello Genetic Algorithm",
   "keywords": [
     "genetic algorithm"
@@ -28,8 +28,8 @@
     "kill": "lsof -i:$npm_package_port -t | xargs kill -9",
     "lint": "eslint './src/**/*.{ts,js,jsx}' --cache",
     "lint:fix": "eslint './src/**/*.{ts,js,jsx}' --fix",
-    "update": "npm_config_yes=true npx npm-check-updates -u --timeout 100000 && yarn install && yarn upgrade && yarn audit",
-    "serve": "yarn kill && NODE_ENV=none DEV_SERVER_PORT=$npm_package_port webpack serve"
+    "serve": "yarn kill && NODE_ENV=none DEV_SERVER_PORT=$npm_package_port webpack serve",
+    "update": "npm_config_yes=true npx npm-check-updates -u --timeout 100000 && yarn install && yarn upgrade && yarn audit"
   },
   "dependencies": {
     "@mui/material": "^5.11.2",
