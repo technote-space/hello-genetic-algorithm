@@ -1,4 +1,4 @@
-import {ReinsertionBase, IChromosome} from '@technote-space/genetic-algorithms-js';
+import { ReinsertionBase, IChromosome } from '@technote-space/genetic-algorithms-js';
 
 export class Cultural extends ReinsertionBase {
   constructor() {

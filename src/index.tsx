@@ -1,11 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import {GaFramework} from '@technote-space/ga-framework';
+import { createRoot } from 'react-dom/client';
+import { GaFramework } from '@technote-space/ga-framework';
 import {
   ListPage,
   TimelinePage,
 } from './app/pages';
-import {Statistics, License} from './app/components';
+import { Statistics, License } from './app/components';
 
 const resultReducer = (store, result) => {
   return {
@@ -69,7 +69,7 @@ const options = {
     },
   },
   controllerListener: (dispatch, result) => {
-    dispatch({type: 'RESULT', result});
+    dispatch({ type: 'RESULT', result });
   },
   getWorkerContext: async store => {
     return {
@@ -88,7 +88,5 @@ const options = {
   },
 };
 
-ReactDOM.render(
-  <GaFramework options={options}/>,
-  document.getElementById('root'),
-);
+const root = createRoot(document.getElementById('root'));
+root.render(<GaFramework options={options}/>);

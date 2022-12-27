@@ -1,4 +1,4 @@
-import {Acid, ChromosomeBase, IChromosome} from '@technote-space/genetic-algorithms-js';
+import { Acid, ChromosomeBase, IChromosome } from '@technote-space/genetic-algorithms-js';
 
 export class Genotype extends ChromosomeBase {
   protected _fitness: number;

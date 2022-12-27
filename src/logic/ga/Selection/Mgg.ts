@@ -1,4 +1,4 @@
-import {SelectionBase, IChromosome} from '@technote-space/genetic-algorithms-js';
+import { SelectionBase, IChromosome } from '@technote-space/genetic-algorithms-js';
 
 export class Mgg extends SelectionBase {
   public select(chromosomes: Array<IChromosome>): { parents: Array<IChromosome>; population: Array<IChromosome> } {

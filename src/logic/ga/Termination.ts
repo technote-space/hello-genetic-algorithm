@@ -1,4 +1,4 @@
-import {IAlgorithm, TerminationBase} from '@technote-space/genetic-algorithms-js';
+import { IAlgorithm, TerminationBase } from '@technote-space/genetic-algorithms-js';
 
 export class Termination extends TerminationBase {
   public constructor(private offspringNumber: number) {

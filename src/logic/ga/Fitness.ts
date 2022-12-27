@@ -1,8 +1,8 @@
-import {FitnessBase, IChromosome} from '@technote-space/genetic-algorithms-js';
+import { FitnessBase, IChromosome } from '@technote-space/genetic-algorithms-js';
 import levenshtein from 'fast-levenshtein';
-import {Genotype} from './Genotype';
-import {Phenotype} from './Phenotype';
-import {TestData} from './TestData/TestData';
+import { Genotype } from './Genotype';
+import { Phenotype } from './Phenotype';
+import { TestData } from './TestData/TestData';
 
 export class Fitness extends FitnessBase {
   constructor(private testData: TestData) {

@@ -1,5 +1,5 @@
 import encoding from 'encoding-japanese';
-import {Genotype} from './Genotype';
+import { Genotype } from './Genotype';
 
 export class Phenotype {
   public static getValue(genotype: Genotype): string {

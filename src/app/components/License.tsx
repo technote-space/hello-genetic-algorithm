@@ -1,23 +1,10 @@
-import React, {useMemo, useCallback, FC} from 'react';
+import React, { useMemo, useCallback, FC } from 'react';
 import axios from 'axios';
-import {saveAs} from 'file-saver';
-import {makeStyles, createStyles} from '@material-ui/core/styles';
+import { saveAs } from 'file-saver';
+import Box from '@mui/material/Box';
 import license from '../../../ThirdPartyNotices.txt';
 
-const useStyles = makeStyles(() => createStyles({
-  wrap: {
-    background: '#555',
-    marginTop: 10,
-    padding: 5,
-    textAlign: 'center',
-  },
-  link: {
-    cursor: 'pointer',
-  },
-}));
-
 const License: FC = () => {
-  const classes     = useStyles();
   const handleClick = useCallback(async() => {
     const res  = await axios.get(license, {
       responseType: 'blob',
@@ -26,9 +13,11 @@ const License: FC = () => {
     saveAs(blob, 'ThirdPartyNotices.txt');
   }, []);
 
-  return useMemo(() => <div className={classes.wrap}>
-    <a onClick={handleClick} className={classes.link}>License</a>
-  </div>, [classes]);
+  return useMemo(() => <Box sx={{ background: '#555', marginTop: '10px', padding: '5px', textAlign: 'center' }}>
+    <Box sx={{ cursor: 'pointer' }}>
+      <a onClick={handleClick}>License</a>
+    </Box>
+  </Box>, []);
 };
 
 export default License;
