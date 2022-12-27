@@ -24,7 +24,7 @@
     "check-types": "tsc",
     "clean": "rm -rf node_modules* build*",
     "clear": "rm -rf build*",
-    "dev": "yarn clear && NODE_ENV=development  webpack --progress --config webpack.dev.js",
+    "dev": "yarn clear && NODE_ENV=development webpack --progress --config webpack.dev.js",
     "kill": "lsof -i:$npm_package_port -t | xargs kill -9",
     "lint": "eslint './src/**/*.{ts,js,jsx}' --cache",
     "lint:fix": "eslint './src/**/*.{ts,js,jsx}' --fix",
@@ -32,8 +32,8 @@
     "watch": "yarn kill && NODE_ENV=none DEV_SERVER_PORT=$npm_package_port webpack serve"
   },
   "dependencies": {
-    "@material-ui/core": "^4.12.3",
-    "@technote-space/ga-framework": "^0.14.21",
+    "@mui/material": "^5.11.2",
+    "@technote-space/ga-framework": "^0.15.1",
     "@technote-space/genetic-algorithms-js": "^0.8.27",
     "axios": "^1.2.1",
     "encoding-japanese": "^2.0.0",
@@ -44,9 +44,9 @@
     "sprintf-js": "^1.1.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.5",
+    "@babel/core": "^7.20.7",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
-    "@babel/plugin-proposal-object-rest-spread": "^7.20.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
     "@babel/plugin-transform-react-inline-elements": "^7.18.6",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-flow": "^7.18.6",
@@ -57,8 +57,8 @@
     "@types/encoding-japanese": "^2.0.1",
     "@types/fast-levenshtein": "^0.0.2",
     "@types/file-saver": "^2.0.5",
-    "@typescript-eslint/eslint-plugin": "^5.47.0",
-    "@typescript-eslint/parser": "^5.47.0",
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "@typescript-eslint/parser": "^5.47.1",
     "babel-loader": "^9.1.0",
     "babel-plugin-react-html-attrs": "^3.0.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -79,5 +79,5 @@
     "webpack-dev-server": "^4.11.1",
     "webpack-merge": "^5.8.0"
   },
-  "port": 5000
+  "port": 5001
 }
