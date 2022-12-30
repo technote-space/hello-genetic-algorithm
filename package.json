@@ -35,7 +35,7 @@
     "@mui/material": "^5.11.2",
     "@technote-space/ga-framework": "^0.15.1",
     "@technote-space/genetic-algorithms-js": "^0.8.27",
-    "axios": "^1.2.1",
+    "axios": "^1.2.2",
     "encoding-japanese": "^2.0.0",
     "fast-levenshtein": "^3.0.0",
     "file-saver": "^2.0.5",
